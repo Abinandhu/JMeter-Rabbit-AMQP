@@ -56,7 +56,7 @@ public abstract class AMQPSampler extends AbstractSampler implements ThreadListe
     private static final String QUEUE_REDECLARE = "AMQPSampler.Redeclare";
     private static final String QUEUE_EXCLUSIVE = "AMQPSampler.QueueExclusive";
     private static final String QUEUE_AUTO_DELETE = "AMQPSampler.QueueAutoDelete";
-    private static final int DEFAULT_HEARTBEAT = 1;
+    private static final int DEFAULT_HEARTBEAT = 60;
 
     private transient ConnectionFactory factory;
     private transient Connection connection;
